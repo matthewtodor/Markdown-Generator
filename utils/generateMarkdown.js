@@ -1,4 +1,3 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 //"Apache", "FireFox", "GNU", "IBM", "Boost"
 function renderLicenseBadge(license) {
@@ -107,11 +106,6 @@ ${data.email}
 You can find my GitHub at:
 
 [${data.github}](https://github.com/${data.github})
-  
-
-
-
-
 
 
 `;
