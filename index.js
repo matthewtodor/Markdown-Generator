@@ -15,7 +15,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const path = require("path");
-const generateMarkdown = require("./utils/generateMarkdown");
+const generateMarkdown = require("./utils/generateMarkdown.js");
 
 // TODO: Create an array of questions for user input
 //QUESTIONS:
@@ -92,7 +92,7 @@ function init() {
 		.prompt(questions)
 		.then((data) => {
 			//writing to file
-			fs.writeFileSync("README.md", generateMarkdown(data));
+			fs.writeFileSync("./readMeFile/README.md", generateMarkdown(data));
 		})
 		.catch((err) => {
 			if (err) throw err;
