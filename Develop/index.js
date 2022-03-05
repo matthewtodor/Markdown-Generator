@@ -31,7 +31,7 @@ const questions = [
 		type: "list",
 		message: "What license is your application using?",
 		name: "license",
-		choices: ["Apache", "FireFox", "GNU", "IBM", "Boost"],
+		choices: ["Apache 2.0", "Mozilla 2.0", "GNU GPL v3", "IBM", "Boost"],
 	},
 	// Description --Description
 	{
@@ -55,7 +55,7 @@ const questions = [
 	{
 		type: "input",
 		message: "Outline the contribution guidelines",
-		name: "contributing",
+		name: "contribute",
 	},
 	// test information -- Tests
 	{
@@ -67,7 +67,7 @@ const questions = [
 	{
 		type: "input",
 		message: "What is your GitHub username?",
-		name: "description",
+		name: "github",
 	},
 	//email address -- Questions -> email
 	{
