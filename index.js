@@ -6,10 +6,6 @@
 // License Badges: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
 //Markdown Cheatsheet: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
-//Project title
-
-//Table of Contents, with links to within the .md file
-
 // TODO: Include packages needed for this application
 
 const inquirer = require("inquirer");
@@ -83,10 +79,6 @@ const questions = [
 	// },
 ];
 
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
 function init() {
 	inquirer
 		.prompt(questions)
