@@ -1,8 +1,8 @@
-# Social Network API 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+# asdfasdf 
+[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
 
 ## Description
-An API for a social network, with users, thoughts, and comments on thoughts. Designed with Express, Node.js, MongoDB, and Mongoose. 
+asdfasdf
 
 ### Table of Contents
 
@@ -20,24 +20,24 @@ An API for a social network, with users, thoughts, and comments on thoughts. Des
 
 ## Installation
 
-Clone the repo, and run "npm i" in your terminal. Once installation is complete, run "npm run start" to boot up your sever. Use Insomnia to access the routes, or connect it to a client side application
+asdfasdf
 
 ## Usage
 
-Used for social networks, or internal company forums
+asdfasdf
 
 ## Contribution
 
-
+asdfasdf
 
 ## Testing
 
-
+asdfasdf
 
 ## License information
-This application was created using the Apache 2.0 open source license. For more information, please visit the license information page here: 
+This application was created using the Boost open source license. For more information, please visit the license information page here: 
 
-**[Apache 2.0](https://opensource.org/licenses/Apache-2.0)**
+
 
 ## Questions
 
@@ -45,10 +45,10 @@ Any additional questions?
 
 You can email me at:
 
-unclejunglegeorge@gmail.com
+asdfasdfasdfasdf
 
 You can find my GitHub at:
 
-[Ccatalyst](https://github.com/Ccatalyst)
+[asdfadsf](https://github.com/asdfadsf)
 
 

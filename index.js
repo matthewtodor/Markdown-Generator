@@ -1,4 +1,4 @@
-//prompt the user for values vbased on questions answered
+//prompt the user for values based on questions answered
 //values are assigned classes based on what question was pertaining to
 //values are generated with classes in a .md file
 
@@ -10,11 +10,10 @@
 
 const inquirer = require("inquirer");
 const fs = require("fs");
-const path = require("path");
+
 const generateMarkdown = require("./utils/generateMarkdown.js");
 
-// TODO: Create an array of questions for user input
-//QUESTIONS:
+//TODO: set up questions to be branching; if a user wants to include a license, ask additional questions about it. Include for sections: License info, Install instructions, Usage Information, Contribution guidelines, Test information.
 const questions = [
 	//Project title
 	{
@@ -22,12 +21,17 @@ const questions = [
 		message: "What is the title of your application?",
 		name: "title",
 	},
+	{
+		type: "confirm",
+		message: "Do you want to include an open source license?",
+		name: "licenseconfirm",
+	},
 	// License info--License Badge
 	{
 		type: "list",
 		message: "What license is your application using?",
 		name: "license",
-		choices: ["Apache 2.0", "Mozilla 2.0", "GNU GPL v3", "IBM", "Boost"],
+		choices: ["Apache 2.0", "Mozilla 2.0", "GNU GPL v3", "IBM", "Boost", "None of the above"],
 	},
 	// Description --Description
 	{
@@ -47,7 +51,7 @@ const questions = [
 		message: "Outline the usage information",
 		name: "usage",
 	},
-	// Contribution guidelinds -- Contributing
+	// Contribution guidelines -- Contributing
 	{
 		type: "input",
 		message: "Outline the contribution guidelines",
@@ -71,7 +75,7 @@ const questions = [
 		message: "What is your email address?",
 		name: "email",
 	},
-	//prompt template
+	////prompt template
 	// {
 	// 	type: "input",
 	// 	message: "Describe your project",
@@ -84,6 +88,7 @@ function init() {
 		.prompt(questions)
 		.then((data) => {
 			//writing to file
+			console.log(data);
 			fs.writeFileSync("./readMeFile/README.md", generateMarkdown(data));
 		})
 		.catch((err) => {
